@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of a Senior Frontend specializing in modern web applications">
     <title>Portfolio | Full Stack Developer</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Fixed CSS path -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -32,63 +34,71 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-title">
-          <span class="title-line">Shana Yasmin</span>
-          <span class="title-line title-accent">Full Stack Developer</span>
-        </h1>
-        <p class="hero-description">
-          Build end-to-end web solutions that are as powerful under the hood as they are elegant on the surface. 
-          My focus is on creating products that users love and systems that last.
-        </p>
-        <div class="hero-cta">
-          <a href="projects.html" class="btn btn-primary">View My Work</a>
-          <a href="contacts.html" class="btn btn-secondary">Get In Touch</a>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-title">
+              <span class="title-line">Shana Yasmin</span>
+              <span class="title-line title-accent">Full Stack Developer</span>
+            </h1>
+            <p class="hero-description">
+              Build end-to-end web solutions that are as powerful under the hood as they are elegant on the surface. 
+              My focus is on creating products that users love and systems that last.
+            </p>
+            <div class="hero-cta">
+              <a href="projects.html" class="btn btn-primary">View My Work</a>
+              <a href="contacts.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+
+          <!-- Your Photo -->
+          <div class="hero-image">
+            <img src="images/shana.jpg" alt="Shana Yasmin - Full Stack Developer">
+          </div>
         </div>
       </div>
 
-      <!-- Your Photo -->
-      <div class="hero-image">
-        <img src="../images/shana.jpg" alt="Shana Yasmin - Full Stack Developer">
+      <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="bg-shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-  </div>
-</section>
-
-
-   <section class="about" id="about">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Who I Am?</h2>
-            <div class="title-underline"></div>
-        </div>
-        <div class="about-content about-grid">
-            <!-- Text on the right -->
-            <div class="about-text">
-                <p class="about-paragraph">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Who I Am?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content about-grid">
+                <div class="about-text">
+                    <p class="about-paragraph">
   Hi, I’m Shana Yasmin, a Full Stack Developer in training with a strong passion for building elegant, efficient, and impactful digital experiences. I enjoy working across the entire stack—from designing responsive, user-friendly interfaces to developing scalable backend systems and integrating databases that bring applications to life. I’m especially interested in creating solutions that balance usability, performance, and security. Currently, I’m working on an exciting project called <strong>Continuous User Authentication using Behavioral Biometrics</strong>, where I explore innovative ways to enhance digital security by analyzing user behavior patterns in real time. This project allows me to blend full stack development with concepts from cybersecurity and intelligent systems.
 </p>
 
 <p class="about-paragraph">
   Over time, I’ve built web applications that focus on clean design, efficient logic, and smooth user experiences. I believe great software is not just about writing code, but about solving real problems and creating products people enjoy using. I’m always eager to learn new technologies, improve my skills, and collaborate with others who are passionate about building meaningful digital solutions. My goal is to grow into a developer who delivers web applications that are not only visually appealing, but also secure, reliable, and scalable.
 </p>
-
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Quick Projects Teaser --> <section class="projects-teaser"> <div class="container"> <div class="section-header"> <h2 class="section-title">Featured Work</h2> <div class="title-underline"></div> </div> <p class="teaser-text">Check out some of my recent projects</p> <a href="projects.html" class="btn btn-primary">View All Projects</a> </div> </section>
+    <!-- Featured Work Teaser -->
+    <section class="projects-teaser">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Work</h2>
+          <div class="title-underline"></div>
+        </div>
+        <p class="teaser-text">Check out some of my recent projects</p>
+        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -114,6 +124,7 @@
         </div>
     </footer>
 
-    <script src="../javascript/script.js"></script>
+    <!-- Fixed JS path -->
+    <script src="js/script.js"></script>
 </body>
-</html> 
+</html>

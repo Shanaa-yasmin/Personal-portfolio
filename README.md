@@ -6,7 +6,7 @@ Welcome to my personal portfolio! I’m **Shana Yasmin**, a Full Stack Developer
 
 ## 🌐 Live Demo
 Check out my portfolio live here:  
-[Shana Yasmin Portfolio](https://personal-portfolio-4ilx50dqt-shana-yasmins-projects.vercel.app)
+[Shana Yasmin Portfolio](https://shanaa-yasmin.github.io/Personal-portfolio/)
 
 ---
 

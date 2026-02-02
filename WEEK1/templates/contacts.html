@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch - Contact form for project inquiries">
+    <title>Contact | Frontend Developer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">dev</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contacts.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Let's Talk</h1>
+            <p class="page-subtitle">Have a project in mind? Let's make it happen</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="contact-info-title">Get In Touch</h2>
+                    <p class="contact-info-text">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-detail-title">Email</h3>
+                                <p class="contact-detail-text">shanayasmin.kt@gmail.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-detail-title">Location</h3>
+                                <p class="contact-detail-text">Kothamangalam, Ernakulam</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-detail-title">Social</h3>
+                                <div class="social-links">
+                                    <a href="https://github.com/Shanaa-yasmin" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                                    <a href="https://www.linkedin.com/in/shana-yasmin-/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                Your Name <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input"
+                                aria-required="true"
+                                aria-describedby="name-error"
+                            >
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Your Email <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input"
+                                aria-required="true"
+                                aria-describedby="email-error"
+                            >
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                Your Message <span class="required">*</span>
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea"
+                                rows="6"
+                                placeholder="Tell me about your project..."
+                                aria-required="true"
+                                aria-describedby="message-error"
+                            ></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div class="success-message" id="successMessage" role="alert" aria-live="polite">
+                        <div class="success-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="success-title">Message Sent!</h3>
+                        <p class="success-text">Thank you for reaching out. I'll get back to you soon!</p>
+                        <button class="btn btn-secondary" id="sendAnother">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-logo">
+                        <span class="logo-bracket">{</span>
+                        <span class="logo-text">dev</span>
+                        <span class="logo-bracket">}</span>
+                    </p>
+                    <p class="footer-text">Code. Create. Innovate.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Shanaa-yasmin" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/shana-yasmin-/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shana Yasmin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
